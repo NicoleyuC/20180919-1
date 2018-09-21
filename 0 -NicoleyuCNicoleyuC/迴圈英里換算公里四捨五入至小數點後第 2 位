@@ -1,0 +1,16 @@
+import java.util.Scanner;
+ public class Main {
+     public static void main(String[] args) {
+        while (true) {
+            Scanner scn = new Scanner(System.in);
+            float x = scn.nextFloat();
+            float y = x * 1.6f;
+            y = Math.round(y * 100) / 100f;
+            System.out.println(y);
+            if (x <= 0) {
+                System.out.println("Error");
+                break;
+            }
+         }
+    }
+}
